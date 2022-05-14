@@ -1,23 +1,25 @@
 body {
-    height: 100%;
-    background: linear-gradient(#434346, #091d2e);
+    height: 100vh;
+    background: linear-gradient(#434346, #1d2022);
     width: 100%;
 }
 main {
-    border: 1px solid #434346;
-    box-shadow: inset 1px 1px 30px 10px #585864;
+    border: 1px solid #434346;    
+    height: 93vh;
 }
 .slider-container {
     margin: 0 auto;
-    width: 800px;    
+    width: 80vw;    
     overflow: hidden;   
+    max-width: 800px;
+    height: 92vh;
+    text-align: right;
 }
 .slider {
     width: 500%;
-    height: 100%;
-    border-radius: 10px;
-    margin: 5vh auto;
+    height: 77vh;    
     display: flex;
+    text-align: left;
 }
 .slide {
     width: 20%;
@@ -25,32 +27,105 @@ main {
 }
 .slide img {
     width: 100%;
-    height: 100%;
+    height: 77vh;
+    border-radius: 10px;
 }
-.navigation {
-    display: flex;
-    margin: 2vh 0;
-    margin-left: auto;
-    width: 13.5vw;
+figcaption {
+    margin-top: 3vh; 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4vh;
+    color: white;
 }
-
 .nav-button {
-    height: 15px;
-    width: 15px;
-    background-color: rgb(71, 184, 236);
-    margin-left: 13px;
-    border-radius: 100%;
+    height: 3vh;
+    width: 3vh;
+    padding: 5px;
+    display: inline-block;
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease;    
 }
-.nav-button:hover {
+label div {
+    height: 3vh;
+    width: 3vh;
+    background-color: rgb(71, 184, 236);
+    border-radius: 100%;
+}
+label:hover div{
     background-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
-input[name='el'] {
-    position: absolute;
-    visibility: hidden;
+label:hover {    
+    cursor: pointer;
+}
+.navig {
+    margin-top: 3.3vh;
+}
+input {    
+    visibility: hidden; 
 }
 a img {
     width: 32px;
     height: 32px;
+}
+
+#el-1:checked ~ .navig label[for='el-1'] div{
+    border: 3px solid rgb(71, 184, 236);
+    background: #1d2022;
+    box-sizing: border-box;
+}
+#el-2:checked ~ .navig label[for='el-2'] div{
+    border: 3px solid rgb(71, 184, 236);
+    background: #1d2022;
+    box-sizing: border-box;
+}
+#el-3:checked ~ .navig label[for='el-3'] div{
+    border: 3px solid rgb(71, 184, 236);
+    background: #1d2022;
+    box-sizing: border-box;
+}
+#el-4:checked ~ .navig label[for='el-4'] div{
+    border: 3px solid rgb(71, 184, 236);
+    background: #1d2022;
+    box-sizing: border-box;
+}
+#el-5:checked ~ .navig label[for='el-5'] div{
+    border: 3px solid rgb(71, 184, 236);
+    background: #1d2022;
+    box-sizing: border-box;
+}
+
+#el-1:checked ~ .slider .active {
+    margin-left: 0;
+}
+#el-2:checked ~ .slider .active {
+    margin-left: -20%;
+}
+#el-3:checked ~ .slider .active {
+    margin-left: -40%;
+}
+#el-4:checked ~ .slider .active {
+    margin-left: -60%;
+}
+#el-5:checked ~ .slider .active {
+    margin-left: -80%;
+}
+
+.footer {
+    box-shadow: inset 1px 1px 30px 10px #585864;
+    background-color: #434346;
+    padding: 0 10vw;font-family: 'Bebas Neue', cursive;
+    font-size: 2vh;
+    color: white;
+}
+.footer__container, .footer-contacts ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    height: 6.7vh;
+}
+.footer-icon {
+    width: 1rem;
+    margin-left: 15px;
+    height: 1rem;
 }

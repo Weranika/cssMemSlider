@@ -6,53 +6,57 @@
     <link rel="stylesheet" type="text/css" href="./reset.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="icon" type="image/x-icon" href="../assets/icons/meme-cat.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Mem Slider</title>
    
 </head>
     <body id="body">
         <main>
             <div class="slider-container">
-                <div class="slider">
-                    <div class="slide"><img src="../assets/images/img_1.jpg" alt="mem" class="mem"></div>
-                    <div class="slide"><img src="../assets/images/img_2.jpg" alt="mem" class="mem"></div>
-                    <div class="slide"><img src="../assets/images/img_3.jpg" alt="mem" class="mem"></div>
-                    <div class="slide"><img src="../assets/images/img_4.jpg" alt="mem" class="mem"></div>
-                    <div class="slide"><img src="../assets/images/img_5.jpg" alt="mem" class="mem"></div>
-
-                    <div>
-                        <input type="radio" name="el" id="el-1" checked>
-                        <input type="radio" name="el" id="el-2" class="input">
-                        <input type="radio" name="el" id="el-3">
-                        <input type="radio" name="el" id="el-4">
-                        <input type="radio" name="el" id="el-5">   
-                    </div>
- 
-                </div>            
+                <input type="radio" name="el" id="el-1" checked>
+                <input type="radio" name="el" id="el-2">
+                <input type="radio" name="el" id="el-3">
+                <input type="radio" name="el" id="el-4">
+                <input type="radio" name="el" id="el-5">
                 
-                <div class="navigation">
-                    <label for="el-1" class="nav-button"></label>
-                    <label for="el-2" class="nav-button"></label>
-                    <label for="el-3" class="nav-button"></label>
-                    <label for="el-4" class="nav-button"></label>
-                    <label for="el-5" class="nav-button"></label>
-                </div>
-                <div class="slider-discription">
-                    <figcaption class="slider-text">I'm and Javascript</figcaption>
-                    <figcaption class="slider-text">Жизненное кредо</figcaption>
-                    <figcaption class="slider-text">Что нас не убивает, делает нас сильнее!</figcaption>
-                    <figcaption class="slider-text">А, что, это и правда не одно и то же??</figcaption>
-                    <figcaption class="slider-text">Я программист по призванию :)</figcaption>
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="../assets/images/img_1.jpg" alt="mem" class="mem">
+                        <figcaption class="slider-text">I'm and the Javascript</figcaption>
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/img_2.jpg" alt="mem" class="mem">
+                        <figcaption class="slider-text">Live without bags</figcaption>
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/img_3.jpg" alt="mem" class="mem">
+                        <figcaption class="slider-text">Here is JS!</figcaption>
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/img_4.jpg" alt="mem" class="mem">
+                        <figcaption class="slider-text">Really O_O??</figcaption>
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/img_5.jpg" alt="mem" class="mem">
+                        <figcaption class="slider-text">I'm trully programmer :)</figcaption>
+                    </div>
+                </div>            
+                <div class="navig">
+                    <label for="el-1" class="nav-button"><div class="label-container"></div></label>
+                    <label for="el-2" class="nav-button"><div class="label-container"></div></label>
+                    <label for="el-3" class="nav-button"><div class="label-container"></div></label>
+                    <label for="el-4" class="nav-button"><div class="label-container"></div></label>
+                    <label for="el-5" class="nav-button"><div class="label-container"></div></label>
                 </div>
             </div>
         </main>        
         <footer class="footer">
             <div class="footer__container">
-                <p class="footer__text">Made by Weranika with love to JS</p>
+                <p class="footer__text">&#169; Made by Weranika with love to JS </p>
                 <div class="footer-contacts">                    
-                    <ul>
-                        <li><a href="/"><img src="../assets/icons/mail-icon.png" alt="mail-icon">Mail</a></li>
-                        <li><a class="footer__link" href="https://github.com/Mister211194"><img src="../assets/icons/Github-icon.png" alt="mail-icon">My repo in GitHub</a></li>
-                        <li><a href=""><img src="../assets/icons/discord-icon.png" alt="discord-icon"></i>Contact in Discord</a></li>
+                    <ul>                        
+                        <li><a class="footer__link" href="https://github.com/Weranika/cssMemSlider/tree/gh-pages/cssMemSlider/assets"><img src="../assets/icons/Github-icon.png" alt="mail-icon" class="footer-icon">My GitHub</a></li>
+                        <li><a href="https://discord.com/channels/516715744646660106/972897208330493962"><img src="../assets/icons/discord-icon.png" alt="discord-icon" class="footer-icon"></i>@Weranika#7342</a></li>
                     </ul>
                 </div>                
             </div>
