@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background: linear-gradient(#434346, #1d2022);
+    background: linear-gradient(#4c4c4d, #1c1f20);
     width: 100%;
 }
 main {
@@ -112,10 +112,11 @@ a img {
 
 .footer {
     box-shadow: inset 1px 1px 30px 10px #585864;
-    background-color: #434346;
-    padding: 0 10vw;font-family: 'Bebas Neue', cursive;
-    font-size: 2vh;
-    color: white;
+    background-color: #434346;    
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1vw;
+    color: rgb(207, 207, 207);
+    box-shadow: inset 1px 1px 19px rgb(207, 207, 207);
 }
 .footer__container, .footer-contacts ul {
     display: flex;
@@ -124,8 +125,26 @@ a img {
     align-items: center;
     height: 6.7vh;
 }
+.footer__container {
+    width: 60vw;
+    margin: 0 auto;
+}
+.footer__container p{
+    width: 20vw;
+}
+.footer-contacts a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+}
 .footer-icon {
     width: 1rem;
     margin-left: 15px;
     height: 1rem;
+    padding-right: 10px;
+}
+.footer-icon:visited {
+    color: rgb(207, 207, 207);
 }
