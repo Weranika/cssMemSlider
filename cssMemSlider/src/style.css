@@ -8,9 +8,8 @@ main {
 }
 .slider-container {
     margin: 0 auto;
-    width: 80vw;    
+    width: 70vw;    
     overflow: hidden;   
-    max-width: 800px;
     height: 92vh;
     text-align: right;
 }
@@ -26,7 +25,7 @@ main {
 .slide img {
     width: 100%;
     max-height: 77vh;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 figcaption {
     margin-top: 3vh; 
@@ -38,7 +37,7 @@ figcaption {
 .nav-button {
     height: 3vh;
     width: 3vh;
-    padding: 5px;
+    padding: .3rem;
     display: inline-block;
     cursor: pointer;
     transition: all 0.4s ease;    
@@ -62,11 +61,6 @@ label:hover {
 input {    
     visibility: hidden; 
 }
-a img {
-    width: 32px;
-    height: 32px;
-}
-
 #el-1:checked ~ .navig label[for='el-1'] div{
     border: 3px solid rgb(71, 184, 236);
     background: #1d2022;
@@ -140,16 +134,63 @@ a img {
 }
 .footer-icon {
     width: 1rem;
-    margin-left: 15px;
+    margin-left: 1rem;
     height: 1rem;
-    padding-right: 10px;
+    padding-right: 0.5rem;
 }
 .footer-icon:visited {
     color: rgb(207, 207, 207);
 }
 /***********************************/
 /************media*******************/
-@media (max-width: 590px) {
+
+@media (min-width: 550px) and (max-width: 750px) {   
+    main {
+        height: 80vh;
+    }
+    .slider-container {        
+        text-align: center;
+    }
+    .slider {
+        height: auto;
+        padding-top: 0;
+    }
+    .slide img {
+        height: auto;
+    }
+    figcaption {
+        margin-top: 10vh;
+        font-size: 3.5vh;
+    }
+    .navig {
+        margin-top: -10.7vh;
+    }
+    .nav-button {
+        height: 2vh;
+        width: 2vh;
+    }
+    label div {
+        height: 2vh;
+        width: 2vh;
+    }
+    .footer__container {
+        margin-top: 2rem;
+        height: 10vh;
+        width: 90vw;
+    }
+    .footer__container p{
+        display: none;
+    }
+    .footer {        
+        font-size: 2vw;
+    }
+    .footer__container, .footer-contacts ul {        
+        justify-content: center;
+    }
+}
+/***********************************/
+/************media*******************/
+@media (max-width: 549px) {
     main {
         height: 80vh;
     }
@@ -179,7 +220,7 @@ a img {
         width: 2vh;
     }
     .footer__container {
-        margin-top: 20px;
+        margin-top: 1rem;
         height: 10vh;
         width: 90vw;
     }
@@ -187,7 +228,7 @@ a img {
         display: none;
     }
     .footer {        
-        font-size: 5vw;
+        font-size: 3vw;
     }
     .footer__container, .footer-contacts ul {        
         justify-content: center;
