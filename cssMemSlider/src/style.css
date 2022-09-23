@@ -1,0 +1,237 @@
+body {
+    height: 100vh;
+    background: linear-gradient(#4c4c4d, #1c1f20);
+    width: 100%;
+}
+main {
+    height: 90vh;
+}
+.slider-container {
+    margin: 0 auto;
+    width: 63vw;    
+    max-width: 1050px;
+    overflow: hidden;   
+    height: 92vh;
+    text-align: right;
+}
+.slider {
+    width: 500%;
+    display: flex;
+    text-align: left;
+}
+.slide {
+    width: 20%;
+    transition: all 0.6s ease;
+}
+.slide img {
+    width: 100%;
+    max-height: 77vh;
+    border-radius: 1rem;
+}
+figcaption {
+    margin-top: 3vh; 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4vh;
+    color: white;
+    height: 5vh;
+}
+.nav-button {
+    height: 3vh;
+    width: 3vh;
+    padding: .3rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.4s ease;    
+}
+label div {
+    height: 3vh;
+    width: 3vh;
+    background-color: rgb(71, 184, 236);
+    border-radius: 100%;
+}
+label:hover div{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+label:hover {    
+    cursor: pointer;
+}
+.navig {
+    margin-top: -5vh;
+}
+input {    
+    visibility: hidden; 
+}
+#el-1:checked ~ .navig label[for='el-1'] div{
+    border: 3px solid rgb(71, 184, 236);
+    background: #1d2022;
+    box-sizing: border-box;
+}
+#el-2:checked ~ .navig label[for='el-2'] div{
+    border: 3px solid rgb(71, 184, 236);
+    background: #1d2022;
+    box-sizing: border-box;
+}
+#el-3:checked ~ .navig label[for='el-3'] div{
+    border: 3px solid rgb(71, 184, 236);
+    background: #1d2022;
+    box-sizing: border-box;
+}
+#el-4:checked ~ .navig label[for='el-4'] div{
+    border: 3px solid rgb(71, 184, 236);
+    background: #1d2022;
+    box-sizing: border-box;
+}
+#el-5:checked ~ .navig label[for='el-5'] div{
+    border: 3px solid rgb(71, 184, 236);
+    background: #1d2022;
+    box-sizing: border-box;
+}
+
+#el-1:checked ~ .slider .active {
+    margin-left: 0;
+}
+#el-2:checked ~ .slider .active {
+    margin-left: -20%;
+}
+#el-3:checked ~ .slider .active {
+    margin-left: -40%;
+}
+#el-4:checked ~ .slider .active {
+    margin-left: -60%;
+}
+#el-5:checked ~ .slider .active {
+    margin-left: -80%;
+}
+
+.footer {
+    box-shadow: inset 1px 1px 30px 10px #585864;
+    background-color: #434346;    
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1vw;
+    color: rgb(207, 207, 207);
+    box-shadow: inset 1px 1px 19px rgb(207, 207, 207);
+}
+.footer__container, .footer-contacts ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    height: 6.7vh;
+}
+.footer__container {
+    width: 60vw;
+    margin: 0 auto;
+}
+.footer__container p{
+    width: 20vw;
+}
+.footer-contacts a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+}
+.footer-icon {
+    width: 1rem;
+    margin-left: 1rem;
+    height: 1rem;
+    padding-right: 0.5rem;
+}
+.footer-icon:visited {
+    color: rgb(207, 207, 207);
+}
+/***********************************/
+/************media*******************/
+
+@media (min-width: 550px) and (max-width: 750px) {   
+    main {
+        height: 80vh;
+    }
+    .slider-container {        
+        text-align: center;
+    }
+    .slider {
+        height: auto;
+        padding-top: 0;
+    }
+    .slide img {
+        height: auto;
+    }
+    figcaption {
+        margin-top: 10vh;
+        font-size: 3.5vh;
+    }
+    .navig {
+        margin-top: -10.7vh;
+    }
+    .nav-button {
+        height: 2vh;
+        width: 2vh;
+    }
+    label div {
+        height: 2vh;
+        width: 2vh;
+    }
+    .footer__container {
+        margin-top: 2rem;
+        height: 10vh;
+        width: 90vw;
+    }
+    .footer__container p{
+        display: none;
+    }
+    .footer {        
+        font-size: 2vw;
+    }
+    .footer__container, .footer-contacts ul {        
+        justify-content: center;
+    }
+}
+/***********************************/
+/************media*******************/
+@media (max-width: 549px) {
+    main {
+        height: 80vh;
+    }
+    .slider-container {        
+        text-align: center;
+    }
+    .slider {
+        height: auto;
+        padding-top: 7vh;
+    }
+    .slide img {
+        height: auto;
+    }
+    figcaption {
+        margin-top: 16vh;
+        font-size: 3.5vh;
+    }
+    .navig {
+        margin-top: -17.7vh;
+    }
+    .nav-button {
+        height: 2vh;
+        width: 2vh;
+    }
+    label div {
+        height: 2vh;
+        width: 2vh;
+    }
+    .footer__container {
+        margin-top: 1rem;
+        height: 10vh;
+        width: 90vw;
+    }
+    .footer__container p{
+        display: none;
+    }
+    .footer {        
+        font-size: 3vw;
+    }
+    .footer__container, .footer-contacts ul {        
+        justify-content: center;
+    }
+}
